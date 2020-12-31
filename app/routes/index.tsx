@@ -1,23 +1,15 @@
-import { useRouteData } from "@remix-run/react";
-
 export function meta() {
   return {
-    title: "Remix Starter",
-    description: "Welcome to remix!",
+    title: "Josh's Personal Site",
+    description: 'Very unfinished',
   };
 }
 
 export default function Index() {
-  let data = useRouteData();
-
   return (
-    <div style={{ textAlign: "center", padding: 20 }}>
-      <h2>Welcome to Remix!</h2>
-      <p>
-        <a href="https://remix.run/dashboard/docs">Check out the docs</a> to get
-        started.
-      </p>
-      <p>Message from the loader: {data.message}</p>
+    <div style={{ textAlign: 'center', padding: 20 }}>
+      <h2>This site is unfinished!</h2>
+      <p>Eventually this will hold my website. For now it just holds this.</p>
     </div>
   );
 }
