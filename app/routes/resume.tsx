@@ -13,17 +13,25 @@ export function headers() {
   };
 }
 
+function classList(...classes: (string | null | undefined | false)[]) {
+  return classes.filter(Boolean).join(' ');
+}
+
 const Link = forwardRef<HTMLAnchorElement, React.HTMLProps<HTMLAnchorElement>>((props, ref) => (
-  <>
-    <a ref={ref} target={props.target ?? '_blank'} {...props} />
-    <span className="show-in-print"> ({props.href})</span>
-  </>
+  <a
+    ref={ref}
+    target="_blank"
+    {...props}
+    className={classList(props.className, props.children === props.href && 'dont-append-link')}
+  />
 ));
 
 export default function Resume() {
   return (
     <main>
       <h1>Josh Marantz</h1>
+      <h2>Who am I</h2>
+      <p>Hi! My name's Josh. </p>
       <h2>Experience</h2>
       <h3>
         Developer at <Link href="https://www.sesameworkshop.org/">Sesame Workshop</Link>
@@ -48,7 +56,7 @@ export default function Resume() {
         Fullstack Developer at <Link href="https://thelabnyc.com/">Thelabnyc</Link>
       </h3>
       <ul>
-        <li>A digital agency – ad campaigns, photography, and webdevelopment</li>
+        <li>Thelab is a digital agency – ad campaigns, photography, and webdevelopment</li>
         <li>I've been working there since the end of 2017</li>
         <li>
           My role is mostly writing client and server side Typescript (interactive components,
@@ -83,15 +91,13 @@ export default function Resume() {
               We built (and now maintain) 2 websites for them:
               <ul>
                 <li>
-                  <a href="https://www.devacurl.com" target="_blank">
-                    https://www.devacurl.com
-                  </a>{' '}
-                  - A consumer facing e-commerce site
+                  <Link href="https://www.devacurl.com">https://www.devacurl.com</Link> - A consumer
+                  facing e-commerce site
                 </li>
                 <li>
-                  <a href="https://www.devacurlpro.com" target="_blank">
+                  <Link href="https://www.devacurlpro.com" target="_blank">
                     https://www.devacurlpro.com
-                  </a>{' '}
+                  </Link>{' '}
                   - A site for hair care professionals to learn about classes and new products
                 </li>
               </ul>
@@ -112,9 +118,8 @@ export default function Resume() {
             <li>We're building them a new e-commerce site, to be released in February of 2021</li>
             <li>
               This site still uses the Django backend we're familiar with, but the frontend is
-              written in <Link href="https://nextjs.org/">Next.js</Link> (a server-rendered React
-              framework) and hosted on Vercel (which also provides caching). We decided to leverage
-              Saleor this time for e-commerce
+              written in Next.js (a server-rendered React framework) and hosted on Vercel (which
+              also provides caching). We decided to leverage Saleor this time for e-commerce
             </li>
           </ul>
         </li>
