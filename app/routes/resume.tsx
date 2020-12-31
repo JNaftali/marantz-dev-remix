@@ -31,45 +31,75 @@ export default function Resume() {
     <main>
       <h1>Josh Marantz</h1>
       <h2>Who am I</h2>
-      <p>Hi! My name's Josh. </p>
-      <h2>Experience</h2>
+      <p>Hi! My name's Josh. I'm a fullstack web developer, bootcamp grad, and folk dancer.</p>
+      <h2>What I do</h2>
+      <p>
+        I do a lot of different things! I'm most comfortable on the back side of the frontend -
+        business logic, fetching data, state management, component architecture and (where
+        applicable) wrangling types. I've done a fair amount of work with HTML and CSS, focused on
+        structure and accessibility rather than presentation. I've also written server-side code -
+        API endpoints, templates, even database queries and migrations.
+      </p>
+      <p>
+        I also enjoy working with people! After finishing Dev Bootcamp, I worked to mentor the
+        students that came after me. I love discussing and learning about programming with other
+        people. Now that Dev Bootcamp has shut down I volunteer at{' '}
+        <Link href="https://codebar.io/">Codebar</Link> to scratch a similar itch. I really enjoy
+        pair programming and working with colleagues.
+      </p>
+      <h2>What technologies I've used</h2>
+      <ul>
+        <li>HTML, CSS, and many of the DOM APIs</li>
+        <li>
+          Client side Typescript (and Javascript), including frameworks like React and Angular
+        </li>
+        <li>
+          Server side Typescript (and Javascript) via Node, including various ways of rendering
+          client side frameworks on the server
+        </li>
+        <li>Python including the Django web framework</li>
+        <li>Creating reusable environments with Docker</li>
+        <li>And more! Ruby, SVG, Lua and Bash scripting</li>
+        <li>
+          And RegExp. Somehow everything I do ends up using regular expressions and I don't mind in
+          the least.
+        </li>
+      </ul>
+      <h2 className="page-break">Where I've worked and what I've built there</h2>
       <h3>
-        Developer at <Link href="https://www.sesameworkshop.org/">Sesame Workshop</Link>
+        Developer at <Link href="https://www.sesameworkshop.org/">Sesame Workshop</Link> (2016-2017)
       </h3>
       <ul>
-        <li>They make the Sesame Street TV program among lots of other children's programming</li>
+        <li>They make the Sesame Street TV program among lots of other children's programming.</li>
         <li>My first job out of bootcamp!</li>
-        <li>9 month contract spanning 2016-2017</li>
-        <li>
+        <li className="project">
           Built a small webapp for teachers to review student submissions (and for students to see
           their grades) as part of{' '}
           <Link href="http://sesamestreetenglish.com/">Sesame Street english</Link>
           <ul>
             <li>Refactored from webcomponents to React for better browser support</li>
-            <li>SPA frontend, node backend with both a mysql and mongo databases</li>
-            <li>Not publicly available</li>
+            <li>SPA frontend, node backend with both a MySQL and Mongo databases</li>
+            <li>Wrote a tiny library to make SVG pie charts!</li>
           </ul>
         </li>
-        <li>My contract lapsed when the department lost funding and temporarily dissolved</li>
       </ul>
       <h3>
-        Fullstack Developer at <Link href="https://thelabnyc.com/">Thelabnyc</Link>
+        Fullstack Developer at <Link href="https://thelabnyc.com/">Thelabnyc</Link> (2017-present)
       </h3>
       <ul>
-        <li>Thelab is a digital agency – ad campaigns, photography, and webdevelopment</li>
-        <li>I've been working there since the end of 2017</li>
+        <li>Thelab is a digital agency – ad campaigns, photography, and web development.</li>
         <li>
           My role is mostly writing client and server side Typescript (interactive components,
-          client side routing issues, etc). I also write a fair amount of Python code to configure
-          the <Link href="https://wagtail.io">Wagtail CMS</Link> we use (and to make miscellaneous
+          client side routing, etc.). I also write a fair amount of Python code to configure the{' '}
+          <Link href="https://wagtail.io">Wagtail CMS</Link> that we use (and to make miscellaneous
           API enpoints).
         </li>
-        <li>
-          Swoonreads
+        <li className="project">
+          SwoonReads
           <ul>
             <li>
               An imprint of <Link href="https://us.macmillan.com/">Macmillian publishing</Link>{' '}
-              focused on YA/romance novels, recently discontinued.
+              focused on YA/romance novels.
             </li>
             <li>
               Their website was a social media site for authors to share their works and receive
@@ -77,49 +107,53 @@ export default function Resume() {
               published.
             </li>
             <li>
-              Initially built in Django templates with JQuery, my first task at thelab was to rewite
-              some of the more dynamic bits in React. These included the "edit profile" form, the
-              custom comments, and the ereader.
+              Launched long before I joined Thelab. Initially built using Django templates and
+              JQuery.
+            </li>
+            <li>
+              My first task at Thelab was to rewite some of the more interactive bits in React.
+              These included the "edit profile" form, the custom comments, and the e-reader.
             </li>
           </ul>
         </li>
-        <li>
+        <li className="project">
           Devacurl
           <ul>
-            <li>A hair care company focusing on products and salons for people with curly hair</li>
+            <li>A hair care company focusing on products and salons for people with curly hair.</li>
             <li>
               We built (and now maintain) 2 websites for them:
               <ul>
                 <li>
-                  <Link href="https://www.devacurl.com">https://www.devacurl.com</Link> - A consumer
-                  facing e-commerce site
+                  <Link href="https://www.devacurl.com">https://www.devacurl.com</Link> - A
+                  consumer-facing e-commerce site
                 </li>
                 <li>
-                  <Link href="https://www.devacurlpro.com" target="_blank">
-                    https://www.devacurlpro.com
-                  </Link>{' '}
-                  - A site for hair care professionals to learn about classes and new products
+                  <Link href="https://www.devacurlpro.com">https://www.devacurlpro.com</Link> - A
+                  site for hair care professionals to learn about classes and new products
                 </li>
               </ul>
             </li>
+            <li>The first project at Thelab that I helped launch!</li>
             <li>
               Both sites draw content from a shared Django backend. The frontends were Angular
-              universal apps - server rendered in Node and transformed into Single Page Apps on the
-              client side. Caching via AWS Cloudfront kept users from having to wait for pages to
-              render on the server. We used Shopify's Graphql APIs to provide e-commerce
-              functionality.
+              Universal apps - server-rendered in Node and transformed into SPAs (single page apps)
+              on the client side. Caching via AWS Cloudfront kept users from having to wait for
+              pages to render on the server. We used{' '}
+              <Link href="https://www.shopify.com/">Shopify's</Link> Graphql APIs to provide
+              e-commerce functionality.
             </li>
           </ul>
         </li>
-        <li>
+        <li className="project">
           La Aurora
           <ul>
-            <li>A cigar factory from the Dominican Republic</li>
-            <li>We're building them a new e-commerce site, to be released in February of 2021</li>
+            <li>A cigar factory from the Dominican Republic.</li>
+            <li>We're building them a new e-commerce site, to be released early 2021.</li>
             <li>
-              This site still uses the Django backend we're familiar with, but the frontend is
+              This site still uses the Django backend Thelab is familiar with, but the frontend is
               written in Next.js (a server-rendered React framework) and hosted on Vercel (which
-              also provides caching). We decided to leverage Saleor this time for e-commerce
+              also provides caching). We are leveraging{' '}
+              <Link href="https://saleor.io/">Saleor</Link> this time for e-commerce functionality.
             </li>
           </ul>
         </li>
