@@ -10,6 +10,7 @@ export function meta() {
 export function headers() {
   return {
     'cache-control': 'max-age=60',
+    'X-Robots-Tag': 'noindex',
   };
 }
 
