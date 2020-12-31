@@ -1,3 +1,30 @@
+main {
+    --content-width: 100ch;
+    padding: 0 max(0px, (100vw - var(--content-width)) / 2);
+}
+
+h1 {
+    text-align: center;
+}
+
+aside dl {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+aside div > * {
+    display: inline;
+}
+
+aside dd {
+    margin-left: 0;
+}
+
+aside dt::after {
+    content: ': ';
+}
+
 .project {
     margin-top: 1em;
 }

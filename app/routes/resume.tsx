@@ -30,6 +30,36 @@ export default function Resume() {
   return (
     <main>
       <h1>Josh Marantz</h1>
+      <aside>
+        <dl>
+          <div>
+            <dt>Email</dt>
+            <dd>
+              <Link href="mailto:josh@marantz.dev" className="dont-append-link">
+                josh@marantz.dev
+              </Link>
+            </dd>
+          </div>
+
+          <div>
+            <dt>Github</dt>
+            <dd>
+              <Link href="https://www.github.com/JNaftali" className="dont-append-link">
+                JNaftali
+              </Link>
+            </dd>
+          </div>
+
+          <div>
+            <dt>Phone</dt>
+            <dd>
+              <Link href="tel:7324257681" className="dont-append-link">
+                732-425-7681
+              </Link>
+            </dd>
+          </div>
+        </dl>
+      </aside>
       <h2>Who am I</h2>
       <p>Hi! My name's Josh. I'm a fullstack web developer, bootcamp grad, and folk dancer.</p>
       <h2>What I do</h2>
