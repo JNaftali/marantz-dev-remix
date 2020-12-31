@@ -1,6 +1,6 @@
 export function meta() {
   return {
-    title: "Josh's Personal Site",
+    title: '👋 Hi from Josh',
     description: 'Very unfinished',
   };
 }
