@@ -82,7 +82,8 @@ export default function Resume() {
       <ul>
         <li>HTML, CSS, and many of the DOM APIs</li>
         <li>
-          Client side Typescript (and Javascript), including frameworks like React and Angular
+          Client side Typescript (and Javascript). This includes frameworks like React and Angular
+          as well as state management tools like Redux and NGRX and much more.
         </li>
         <li>
           Server side Typescript (and Javascript) via Node, including various ways of rendering
@@ -142,8 +143,9 @@ export default function Resume() {
               JQuery.
             </li>
             <li>
-              My first task at Thelab was to rewite some of the more interactive bits in React.
-              These included the "edit profile" form, the custom comments, and the e-reader.
+              My first task at Thelab was to rewite some of the more interactive bits in typescript,
+              React and Redux. These included the "edit profile" form, the custom comments, and the
+              e-reader.
             </li>
           </ul>
         </li>
@@ -171,7 +173,7 @@ export default function Resume() {
               on the client side. Caching via AWS Cloudfront kept users from having to wait for
               pages to render on the server. We used{' '}
               <Link href="https://www.shopify.com/">Shopify's</Link> Graphql APIs to provide
-              e-commerce functionality.
+              e-commerce functionality and NGRX for structured global state.
             </li>
           </ul>
         </li>
@@ -184,7 +186,8 @@ export default function Resume() {
               This site still uses the Django backend Thelab is familiar with, but the frontend is
               written in Next.js (a server-rendered React framework) and hosted on Vercel (which
               also provides caching). We are leveraging{' '}
-              <Link href="https://saleor.io/">Saleor</Link> this time for e-commerce functionality.
+              <Link href="https://saleor.io/">Saleor</Link> this time for e-commerce functionality
+              and Redux Toolkit to manage global state.
             </li>
           </ul>
         </li>
