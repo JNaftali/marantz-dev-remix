@@ -1,6 +1,5 @@
 main {
-    --content-width: 100ch;
-    padding: 0 max(0px, (100vw - var(--content-width)) / 2);
+    padding: 0 max(0px, (100vw - 100ch) / 2);
 }
 
 h1 {
