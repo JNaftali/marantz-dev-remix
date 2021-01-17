@@ -26,3 +26,26 @@ export default function App() {
     </html>
   );
 }
+
+export function ErrorBoundary({ error }: { error: Error }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <title>Oops!</title>
+      </head>
+      <body>
+        <div>
+          <h1>App Error</h1>
+          <pre>{error.message}</pre>
+          <p>
+            Alas, you've found an unexpected error! Woe is me. And you apparently, for having to
+            deal with my code.
+          </p>
+        </div>
+
+        <Scripts />
+      </body>
+    </html>
+  );
+}
