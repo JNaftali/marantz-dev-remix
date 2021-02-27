@@ -1,4 +1,6 @@
+import type { LinksFunction } from '@remix-run/data';
 import { forwardRef } from 'react';
+import styles from 'css:../styles/resume.css';
 
 export function meta() {
   return {
@@ -13,6 +15,10 @@ export function headers() {
     'X-Robots-Tag': 'noindex',
   };
 }
+
+export const links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: styles }];
+};
 
 function classList(...classes: (string | null | undefined | false)[]) {
   return classes.filter(Boolean).join(' ');

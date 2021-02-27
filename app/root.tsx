@@ -1,6 +1,6 @@
 import type { Loader } from '@remix-run/data';
 import { useLocation, Outlet } from 'react-router-dom';
-import { Meta, Scripts, Styles, useRouteData } from '@remix-run/react';
+import { Meta, Scripts, Links, useRouteData } from '@remix-run/react';
 
 export let loader: Loader = async () => {
   return {
@@ -21,7 +21,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <Meta />
-        <Styles />
+        <Links />
       </head>
       <body>
         <Outlet />

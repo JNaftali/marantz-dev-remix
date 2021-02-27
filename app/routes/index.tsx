@@ -1,3 +1,6 @@
+import styles from 'css:../styles/index.css';
+import type { LinksFunction } from '@remix-run/data';
+
 export function meta() {
   return {
     title: '👋 Hi from Josh',
@@ -13,3 +16,7 @@ export default function Index() {
     </div>
   );
 }
+
+export let links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: styles }];
+};
