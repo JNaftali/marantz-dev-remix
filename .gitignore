@@ -1,7 +1,7 @@
 node_modules/
 
 /.cache
-/app-build
+/build
 /public/build
 
 .vercel
