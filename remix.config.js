@@ -13,7 +13,7 @@ module.exports = {
    * We prevent vercel from building when it deploys because it chokes on the
    * typescript files that Remix already built.
    */
-  appDirectory: isLocalDev ? "app" : "app-build",
+  appDirectory: "app",
 
   /**
    * A hook for defining custom routes based on your own file conventions. This
