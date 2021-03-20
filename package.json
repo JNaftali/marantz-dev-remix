@@ -1,5 +1,5 @@
 {
-  "name": "remix-starter-vercel",
+  "name": "marantz-dev-remix",
   "private": true,
   "version": "1.0.0",
   "scripts": {
@@ -30,6 +30,7 @@
     "vercel": "^21.2.1"
   },
   "engines": {
-    "node": "12"
+    "node": "14",
+    "npm": "7"
   }
 }
