@@ -1,5 +1,5 @@
 import type { Loader } from '@remix-run/data';
-import { useLocation, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { Meta, Scripts, Links, useRouteData, useMatches } from '@remix-run/react';
 
 export let loader: Loader = async () => {
@@ -8,10 +8,7 @@ export let loader: Loader = async () => {
   };
 };
 
-const noScriptPaths = new Set(['/', '/resume']);
-
 export default function App() {
-  let location = useLocation();
   let matches = useMatches();
 
   // If at least one route wants to hydrate, this will return true
