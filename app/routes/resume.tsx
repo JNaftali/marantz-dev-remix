@@ -5,13 +5,12 @@ import styles from 'css:../styles/resume.css';
 export function meta() {
   return {
     title: "Josh Marantz's Resume",
-    // description: "Welcome to remix!",
   };
 }
 
 export function headers() {
   return {
-    'cache-control': 'max-age=60',
+    'cache-control': 's-maxage=604800',
     'X-Robots-Tag': 'noindex',
   };
 }
