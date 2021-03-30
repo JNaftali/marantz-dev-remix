@@ -1,8 +1,8 @@
-import type { Loader } from '@remix-run/data';
+import type { LoaderFunction } from '@remix-run/node';
 import { Outlet } from 'react-router-dom';
 import { Meta, Scripts, Links, useRouteData, useMatches } from '@remix-run/react';
 
-export let loader: Loader = async () => {
+export let loader: LoaderFunction = async () => {
   return {
     date: new Date(),
   };

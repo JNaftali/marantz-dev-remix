@@ -1,4 +1,4 @@
-import type { LinksFunction } from '@remix-run/data';
+import type { LinksFunction } from '@remix-run/node';
 import { forwardRef } from 'react';
 import styles from 'css:../styles/resume.css';
 

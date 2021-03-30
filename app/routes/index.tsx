@@ -1,5 +1,5 @@
 import styles from 'css:../styles/index.css';
-import type { LinksFunction } from '@remix-run/data';
+import type { LinksFunction } from '@remix-run/node';
 
 export function meta() {
   return {

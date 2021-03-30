@@ -9,9 +9,9 @@
     "start": "concurrently \"remix run\" \"vercel dev\""
   },
   "dependencies": {
-    "@remix-run/data": "^0.14.0",
-    "@remix-run/react": "^0.14.0",
-    "@remix-run/vercel": "^0.14.0",
+    "@remix-run/node": "^0.15.1",
+    "@remix-run/react": "^0.15.1",
+    "@remix-run/vercel": "^0.15.1",
     "@vercel/node": "1.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -19,7 +19,7 @@
     "react-router-dom": "^6.0.0-beta.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^0.14.0",
+    "@remix-run/dev": "^0.15.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "autoprefixer": "^10.2.4",
