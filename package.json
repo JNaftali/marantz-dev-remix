@@ -3,10 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "remix build",
+    "build": "npm run css:build && remix build2",
     "predeploy": "rm -rf ./build && NODE_ENV=production npm run build",
     "deploy": "vercel",
-    "start": "concurrently \"remix run\" \"vercel dev\""
+    "start": "concurrently \"npm run css:watch\" \"remix run2\" \"vercel dev\"",
+    "css:watch": "postcss styles --base styles --dir app/styles -w",
+    "css:build": "postcss styles --base styles --dir app/styles --env production"
   },
   "dependencies": {
     "@remix-run/node": "^0.15.1",
@@ -26,6 +28,7 @@
     "concurrently": "^5.3.0",
     "cssnano": "^4.1.10",
     "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
     "typescript": "^4.1.2",
     "vercel": "^21.3.3"
   },

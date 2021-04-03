@@ -46,7 +46,6 @@ aside dt::after {
     }
     
     .page-break {
-        -moz-column-break-before: page;
-             break-before: page;
+        break-before: page;
     }
 }

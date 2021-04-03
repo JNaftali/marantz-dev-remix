@@ -1,4 +1,4 @@
-import styles from 'css:../styles/index.css';
+import styles from '../styles/index.css';
 import type { LinksFunction } from '@remix-run/node';
 
 export function meta() {

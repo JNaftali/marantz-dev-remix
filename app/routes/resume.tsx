@@ -1,6 +1,6 @@
 import type { LinksFunction } from '@remix-run/node';
 import { forwardRef } from 'react';
-import styles from 'css:../styles/resume.css';
+import styles from '../styles/resume.css';
 
 export function meta() {
   return {
